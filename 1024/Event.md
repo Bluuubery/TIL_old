@@ -40,10 +40,10 @@ EventTarget.addEventListner(type, listner)
 1. 버튼 카운트  
    ![image](https://user-images.githubusercontent.com/109324637/197466519-6557ed15-4b06-4fd5-b9c8-185ba956dbd1.png)
 
-2. input 입력값 실시간으로 출력하기
+2. input 입력값 실시간으로 출력하기  
    ![image](https://user-images.githubusercontent.com/109324637/197467466-a07b1ebf-c570-4a5a-a6d1-681a5ca8e588.png)
 
-3. 입력값 실시간 출력 + button 클릭 시 출력
+3. 입력값 실시간 출력 + button 클릭 시 출력  
    ![image](https://user-images.githubusercontent.com/109324637/197468430-dfe6db85-8479-4147-949e-7da013aa93b3.png)
 
 ## Event 취소
@@ -59,7 +59,7 @@ EventTarget.addEventListner(type, listner)
 
 ### 실습
 
-1. 복사 방지
+1. 복사 방지  
    ![image](https://user-images.githubusercontent.com/109324637/197469347-c571697c-391f-44aa-aafc-f5f052f3507e.png)
 
 ## Event 종합 실습
@@ -72,9 +72,9 @@ EventTarget.addEventListner(type, listner)
 
 ### 실습 진행
 
-1. 버튼 클릭 시 랜덤 로또 번호 6개 출력
+1. 버튼 클릭 시 랜덤 로또 번호 6개 출력  
    ![image](https://user-images.githubusercontent.com/109324637/197471549-250c7a02-8370-42ad-8224-4fcc7b52752d.png)
 
-2. CREATE, READ 기능이 있는 todo app 만들기
+2. CREATE, READ 기능이 있는 todo app 만들기  
    ![image](https://user-images.githubusercontent.com/109324637/197472646-e5086188-159d-402d-a697-1d7cce0ddd45.png)  
    ✔ 콜백 함수가 길어질 경우 이후 유지보수를 위해 함수를 밖으로 빼서 호출할 수 있다.
