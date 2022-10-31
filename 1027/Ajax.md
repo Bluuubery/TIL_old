@@ -232,6 +232,7 @@ def follow(request, user_pk):
 ```
 
 5. 개발자 도구로 결과 확인해보기
+
    ![image](https://user-images.githubusercontent.com/109324637/198936287-6b44627e-b1bb-4c89-b316-a40c09892c18.png)
    ![image](https://user-images.githubusercontent.com/109324637/198936397-a5885b8e-b5fb-46d3-8b93-935423d76adb.png)
 
