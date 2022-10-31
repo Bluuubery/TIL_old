@@ -9,7 +9,7 @@
 
 ### Axios 사용해보기
 
-```JavaScript
+```javascript
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
   axios.get('요청할 URL')

@@ -36,6 +36,29 @@
 
 ### then & catch
 
+```javascript
+  <script>
+    axios({
+      method: 'get',
+      url: URL,
+    })
+      .then(response => {
+        console.log(response)
+        return response.data
+      })
+      .then(response => {
+        console.log(response)
+        return response.title
+      })
+      .then(response => {
+        console.log(response)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  </script>
+```
+
 ✔ **`then(callback)`**
 
 - 요청한 작업이 성공하면 callback 실행
