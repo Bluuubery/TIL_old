@@ -150,6 +150,7 @@
 ### 2. csrftoken 작성
 
 1. hidden 타입으로 숨겨져 있는 csrf값을 가진 input 태그를 선택한다.
+
    ![image](https://user-images.githubusercontent.com/109324637/198935405-5fb3dab1-4cbb-4c49-9c48-8d7a0a8e9398.png)
 
 ```html
