@@ -19,7 +19,22 @@
 
 ### 선택 관련 메서드 실습
 
-이미지 추가하기
+```JavaScript
+   <script>
+     console.log(document.querySelector("#title"));
+     console.log(document.querySelectorAll(".text"));
+
+     console.log(document.querySelector(".text"));
+     console.log(document.querySelectorAll("body > ul > li"));
+
+     liTags = document.querySelectorAll("body > ul > li");
+     liTags.forEach((element) => {
+       console.log(element);
+     });
+   </script>
+```
+
+![image](https://user-images.githubusercontent.com/109324637/198923327-18308474-e715-4b5c-83e1-b2dc33d8730f.png)
 
 ### NodeList
 
@@ -50,7 +65,45 @@
 
 ### 조작 관련 메서드 실습
 
-이미지 추가하기
+```JavaScript
+  <script>
+    // 태그 생성
+    const h1Tag = document.createElement('h1')
+
+    // 태그안에 컨텐츠를 작성하고
+    h1Tag.innerText = 'DOM 조작'
+
+    // 부모 div 태그를 가져와서
+    const div = document.querySelector('div')
+
+    // div 태그의 자식 요소로 추가
+    div.appendChild(h1Tag)
+
+    // div의 h1 요소 삭제
+    div.removeChild(h1Tag)
+  </script>
+```
+
+```JavaScript
+  <script>
+    // a 태그 생성
+    const aTag = document.createElement('a')
+
+    // a 태그 속성 추가
+    aTag.setAttribute('href', 'https://google.com')
+
+    // a 태그 컨텐츠 추가
+    aTag.innerText = '구글'
+
+    // div 태그 선택 후 자식 태그로 a 태그 추가
+    const divTag = document.querySelector('div')
+    divTag.appendChild(aTag)
+
+    // hi 태그 선택 후 클래스 값 조정
+    const h1Tag = document.querySelector('h1')
+    h1Tag.classList.toggle('blue')
+  </script>
+```
 
 ### 조작관련 메서드(속성 조회 및 설정)
 

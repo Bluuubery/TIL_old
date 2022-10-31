@@ -9,7 +9,14 @@
 
 ### Axios 사용해보기
 
-![image](https://user-images.githubusercontent.com/109324637/198166828-05dbda2d-6728-4361-a2db-133834e3cbb6.png)
+```JavaScript
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  axios.get('요청할 URL')
+    .then(성공하면 수행할 콜백함수)
+    .catch(실패하면 수행할 콜백 함수)
+</script>
+```
 
 ✔ get, post 등 여러 method 사용 가능  
 ✔ **`then`**을 이용해서 성공하면 수행할 로직 작성  
@@ -17,7 +24,22 @@
 
 ### 고양이 사진 api 가져오기 (Python)
 
-![image](https://user-images.githubusercontent.com/109324637/198167066-7c8e0533-4af2-4be5-a66d-1dd576e1fdfc.png)  
+```Python
+import requests
+
+print('고양이는 야옹')
+
+cat_image_search_url = 'https://api.thecatapi.com/v1/images/search'
+response = requests.get(cat_image_search_url)
+
+if response.status_code == 200:
+    print(response.json())
+else:
+    print('실패했다옹')
+
+print('야옹야옹')
+```
+
 ![image](https://user-images.githubusercontent.com/109324637/198167118-c3ffa2c8-2923-46bf-95a5-296bc30421c5.png)  
 ✔ 처리결과를 보면 동기식으로 처리 된다.
 
