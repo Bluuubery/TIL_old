@@ -292,3 +292,91 @@ const app3 = new Vue({
 ```
 
 ### v-bind
+
+```html
+<div id="app2">
+  <a v-bind:href="url">Go To GOOGLE</a>
+
+  <p v-bind:class="redTextClass">빨간 글씨</p>
+  <p v-bind:class="{ 'red-text': true }">빨간 글씨</p>
+  <p v-bind:class="[redTextClass, borderBlack]">빨간 글씨, 검은 테두리</p>
+  <!-- : shortcut -->
+  <p :class="theme">상황에 따른 활성화</p>
+  <button @click="darkModeToggle">dark Mode {{ isActive }}</button>
+</div>
+```
+
+```html
+<script>
+  const app2 = new Vue({
+    el: "#app2",
+    data: {
+      url: "https://www.google.com/",
+      redTextClass: "red-text",
+      borderBlack: "border-black",
+      isActive: true,
+      theme: "dark-mode",
+    },
+    methods: {
+      darkModeToggle() {
+        this.isActive = !this.isActive;
+        if (this.isActive) {
+          this.theme = "dark-mode";
+        } else {
+          this.theme = "white-mode";
+        }
+      },
+    },
+  });
+</script>
+```
+
+✔ **HTML 기본 속성에 Vue data를 연결**  
+✔ class의 경우 다양한 형태로 연결 가능  
+✔ **조건부 바인딩**
+
+- `{'class Name': '조건 표현식'}
+- 삼항 연산자 가능
+
+✔ **다중 바인딩**
+
+- `['JS표현식', 'JS표현식',...]`
+
+✔ `:` shortcut 제공
+
+### v-model
+
+```html
+<div id="app">
+  <h2>1. Input -> Data</h2>
+  <h3>{{ myMessage }}</h3>
+  <input @input="onInputChange" type="text" />
+  <hr />
+
+  <h2>2. Input <-> Data</h2>
+  <h3>{{ myMessage2 }}</h3>
+  <input v-model="myMessage2" type="text" />
+  <hr />
+</div>
+```
+
+```html
+<script>
+  const app = new Vue({
+    el: "#app",
+    data: {
+      myMessage: "",
+      myMessage2: "",
+    },
+    methods: {
+      onInputChange: function (event) {
+        this.myMessage = event.target.value;
+      },
+    },
+  });
+</script>
+```
+
+✔ Vue instance와 DOM의 **양방향 바인딩**  
+✔ Vue data 변경 시 v-model로 연결된 사용자 입력 element에도 적용  
+✔ 한글, 일본어, 중국어 완전히 지원 x
