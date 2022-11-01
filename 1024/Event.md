@@ -41,23 +41,24 @@ EventTarget.addEventListner(type, listner)
 
    ```JavaScript
    <body>
-   <button id="btn">버튼</button>
-   <p id="counter">0</p>
+    <button id="btn">버튼</button>
+    <p id="counter">0</p>
 
-   <script>
-     const btn = document.querySelector('#btn')
-     let countNum = 0
+    <script>
+      const btn = document.querySelector('#btn')
+      let countNum = 0
 
-     // 이벤트 핸들러 작성
-     btn.addEventListener('click', function (event) {
-       // console.log(event)
-       const pTag = document.querySelector('#counter')
+      // 이벤트 핸들러 작성
+      btn.addEventListener('click', function (event) {
+        // console.log(event)
+        const pTag = document.querySelector('#counter')
 
-       countNum += 1
+        countNum += 1
 
-       pTag.innerText = countNum
-     })
-   </script>
+        pTag.innerText = countNum
+      })
+    </script>
+   </body>
    ```
 
 2. input 입력값 실시간으로 출력하기
@@ -116,8 +117,8 @@ EventTarget.addEventListner(type, listner)
 
 ### `event.preventDefault()`
 
-✔ 현재 Event의 기본 동작 중단
-✔ HTML 요소의 기본 동작을 작동하지 않게 막음
+✔ **현재 Event의 기본 동작 중단**  
+✔ HTML 요소의 기본 동작을 작동하지 않게 막음  
 ✔ HTMl 요소의 기본 동작 예시
 
 - a 태그: 클릭 시 특정 주소로 이동
