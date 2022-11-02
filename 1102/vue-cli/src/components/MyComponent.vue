@@ -1,10 +1,14 @@
-// MyComponent.vue
+<!-- MyComponent.vue -->
 
 <template>
   <div class="border">
     <h1>This is my Component</h1>
-    <!-- 3. 보여주기 -->
-    <MyComponentItem />
+    <MyComponentItem
+      static-props="Data from MyComponent"
+      :dynamic-props="dynamicProps"
+      @child-to-parent="parentGetEvent"
+      @child-input="getDynamicData"
+    />
   </div>
 </template>
 
@@ -17,6 +21,21 @@ export default {
   // 2. 등록하기
   components: {
     MyComponentItem,
+  },
+  data: function () {
+    return {
+      dynamicProps: "It's in data",
+    };
+  },
+  methods: {
+    parentGetEvent: function (inputData) {
+      console.log("event from child!");
+      console.log(`get ${inputData} from child component`);
+    },
+    getDynamicData: function (inputData) {
+      console.log(12);
+      console.log(`get dynamic ${inputData} from child component`);
+    },
   },
 };
 </script>
