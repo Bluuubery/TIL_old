@@ -183,6 +183,8 @@ export default {
 </script>
 ```
 
+![](assets/Emit_Event.md/2022-11-02-16-59-05.png)
+
 ### 흐름 정리
 
 1. 자식 컴포넌트에 있는 버튼 클릭 이벤트를 청취하여 연결된 핸들러 함수(`ChildInput`)호출
