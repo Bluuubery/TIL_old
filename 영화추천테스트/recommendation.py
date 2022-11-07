@@ -20,7 +20,7 @@ item_based_collaborate = pd.DataFrame(
 
 
 def recommend_movie(title):
-    return item_based_collaborate[title].sort_values(ascending=False)[1:6]
+    return item_based_collaborate[title].sort_values(ascending=False)[1:11]
 
 
 title = input()
