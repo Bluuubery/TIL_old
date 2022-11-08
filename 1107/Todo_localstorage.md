@@ -14,6 +14,7 @@
 ## Local Storage 실습
 
 1. 실습
+
 ```javascript
 // index.js
 
@@ -28,13 +29,13 @@ export default new Vuex.Store({
   },
   modules: {},
 });
-
 ```
 
 ✔ 데이터가 문자열 형태로 저장되어야 하기 때문에 `JSON.stringify`를 사용해 문자열 형태로 변환해주는 과정 필요  
 ✔ state를 변경하는 작업이 아니기 때문에 mutations이 아닌 actions에 작성
 
 2. 실습
+   
 ```javascript
 // index.js
 
