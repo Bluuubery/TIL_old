@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import IndexView from '../views/IndexView.vue'
 import CreateView from '../views/CreateView.vue'
+import DetailView from '../views/DetailView.vue'
+import NotFound404 from '../views/NotFound404.vue'
 
 
 Vue.use(VueRouter)
@@ -18,12 +20,26 @@ const routes = [
     component: CreateView
   },
   {
+    path: '/404-not-found',
+    name: 'NotFound404',
+    component: NotFound404
+  },
+  {
+    path: '/:id',
+    name: 'detail',
+    component: DetailView
+  },
+  {
     path: '/about',
     name: 'about',
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+  },
+  {
+    path: '*',
+    redirect: { name: 'NotFound404' }
   }
 ]
 
