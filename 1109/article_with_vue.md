@@ -226,6 +226,7 @@ const routes = [
 ```
 
 2. Form 생성 및 데이터 정의
+
 ```vue
 <template>
   <div>
@@ -255,7 +256,6 @@ export default {
   },
 }
 </script>
-
 ```
 
 3. submit 이벤트 동작 취소하기
@@ -276,6 +276,7 @@ export default {
 ✔ `v-on: {event}.prevent` 활용하여 submit 이벤트 동작 취소  
 
 4. actions에 여러 데이터를 넘길 때 하나의 object로 만들어서 전달
+
 ```vue
 // views/CreateView.vue
 
