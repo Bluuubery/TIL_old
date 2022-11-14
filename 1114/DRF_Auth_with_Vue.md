@@ -578,6 +578,7 @@ class Article(models.Model):
 ✔ 게시글 작성시 User 정보를 포함하여 작성하도록 수정 -> User 정보를 Vue에서도 확인 가능하도록 정보 제공  
 
 2. makemigrations, migrate
+
 ![](assets/DRF_Auth_with_Vue.md/2022-11-14-22-55-06.png)
 
 ✔ 기존 게시글에 대한 User정보 defualt 값 설정
