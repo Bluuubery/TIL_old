@@ -21,6 +21,12 @@ const API_URL = "http://127.0.0.1:8000";
 
 export default {
   name: "CreateView",
+  data() {
+    return {
+      title: null,
+      content: null
+    }
+  },
   methods: {
     createArticle() {
       const title = this.title;
@@ -35,6 +41,9 @@ export default {
       axios({
         method: "post",
         url: `${API_URL}/api/v1/articles/`,
+        headers: {
+          Authorization: `Token ${ this.$store.state.token }`
+        },
         data: {
           title,
           content,
