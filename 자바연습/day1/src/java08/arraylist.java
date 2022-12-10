@@ -15,6 +15,6 @@ public class arraylist {
         // System.out.println(arr.size());
         // System.out.println(arr.contains(3));
         // System.out.println(arr.contains(5));
-        System.out.println(arr.remove("3"));
+        // System.out.println(arr.remove("3"));
     }
 }

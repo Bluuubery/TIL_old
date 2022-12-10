@@ -15,7 +15,7 @@ public class PersonTest {
         p2.hobby = "Netflix";
 
         System.out.println(Person.personCount);
-        System.out.println(p1.personCount); // 인스턴스로 접근할 수는 있으나 권장은 되지 않는다!
+        // System.out.println(p1.personCount); // 인스턴스로 접근할 수는 있으나 권장은 되지 않는다!
         
     }
 }

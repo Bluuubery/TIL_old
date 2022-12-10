@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class java04_array {
     public static void main(String[] args) {
-        int[] score1;
+        // int[] score1;
         // int score2[];
 
         int[] score2 = new int[5];
